@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+.container {
+  background-color: white;
+  border-radius: 10px;
+  height: min-content;
+  margin-top: 30px;
+  max-width: 380px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .login{
+  font-weight: bold;
+}
+.container label {
+  margin-left: 1%;
+}
+.logo {
+  width: 30%;
+  margin: auto;
+  margin-bottom: -15%;
+  margin-left: 34%;
+  margin-top: 10%;
+}
+.register {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.register a {
+  color: #FFA500;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: -20%;
+}
+.submit {
+  background-color: #FFA500;
+  border-color: #FFA500;
+  font-weight: 700;
+}
+.submit:hover {
+  background-color: #e28743;
+}
+.container-fluid img {
+  width: 30px;
+  margin-top: 30px;
+  margin-right: 50px;
+  align-self: center;
+}
+.container-fluid {
+  background-color: white;
+  height: 100px;
+  margin-top: 5%;
+}
+.container-fluid .icons {
+  width: 80%;
+  display: inline;
+  align-self: center;
+  margin-left: 40px;
+}
+

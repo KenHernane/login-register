@@ -1,0 +1,39 @@
+
+<div class="container">
+  <img src="./assets/landlimits logo.png" class="logo" alt="landlimits-logo">
+  <app-header></app-header>
+  <form [formGroup]="loginForm" (ngSubmit)="submit()" class="form">
+    <div class="form-group mb-5">
+      <label for="Username" class="form-label">Username: </label>
+      <input type="text" formControlName="username" class="form-control mb-3" placeholder="Username">
+      <div class="alert alert-danger" role="alert" *ngIf="fc['username'].errors && isSubmitted">
+        <div *ngIf="fc['username'].errors['required']">Username should have a value</div>
+        <div *ngIf="fc['username'].errors['minLength']">Mli nga e</div>
+      </div>
+    </div>
+    <div class="form-group mb-5">
+      <label for="password" class="form-label">Password: </label>
+      <input type="password" formControlName="password" class="form-control mb-3" placeholder="Password">
+      <div class="alert alert-danger" role="alert" *ngIf="fc['password'].errors && isSubmitted">
+        <div *ngIf="fc['password'].errors['required']">Password should have a value</div>
+        <div *ngIf="fc['password'].errors['minLength']">Mli nga e</div>
+      </div>
+    </div>
+    <div class="form-group d-grid gap-2">
+      <input type="submit" value="Login" class="btn btn-primary btn-block mb-4 submit">
+    </div>
+    <div class="form-group d-grid gap-2">
+      <span class="register mb-4"> Don't have an Account? Sign Up <a href="#"> here</a></span>
+    </div>
+  </form>
+</div>
+<footer>
+  <div class="container-fluid">
+    <div class="icons">
+        <a href=""><img src="./assets/fb.png" alt="Facebook"></a>
+        <a href=""><img src="./assets/ig.png" alt="Facebook"></a>
+        <a href=""><img src="./assets/phone.png" alt="Facebook"></a>
+    </div>
+  </div>
+</footer>
+
